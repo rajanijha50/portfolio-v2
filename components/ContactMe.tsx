@@ -89,8 +89,8 @@ const ContactMe = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight text-gray-900 dark:text-white">
-            Let's <span className="text-primary">Connect</span>
+          <h2 className="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight ">
+            Let's <span className="text-primary font-bold">Connect</span>
           </h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg">
             Have a project in mind, a question, or just want to say hi? I'd love to hear from you. Drop a message below!
@@ -106,7 +106,7 @@ const ContactMe = () => {
         >
           <form 
             onSubmit={handleFormSubmit} 
-            className="bg-white/70 dark:bg-gray-900/70 backdrop-blur-xl p-8 md:p-10 rounded-3xl shadow-xl shadow-gray-200/50 dark:shadow-black/50 border border-gray-100 dark:border-gray-800"
+            className="p-8 md:p-10 rounded-3xl shadow-xl shadow-gray-200/50 dark:shadow-black/50 border border-border dark:border-border"
           >
             <motion.div variants={{itemVariants}} className="mb-6 relative group">
               <label htmlFor="name" className="block text-sm font-semibold mb-2 text-gray-700 dark:text-gray-300 ml-1">
@@ -119,7 +119,7 @@ const ContactMe = () => {
                 <input 
                   id="name" 
                   type="text" 
-                  placeholder="Tony Stark" 
+                  placeholder="Rajani Ranjan Jha" 
                   className="w-full pl-11 pr-4 py-3.5 bg-gray-50 dark:bg-gray-950 border border-gray-200 dark:border-gray-800 rounded-2xl outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-300 text-gray-800 dark:text-gray-100 placeholder:text-gray-400"
                   value={name} 
                   onChange={(e) => setName(e.target.value)} 
@@ -140,7 +140,7 @@ const ContactMe = () => {
                 <input 
                   id="email" 
                   type="email" 
-                  placeholder="tony@starkindustries.com" 
+                  placeholder="rajanijha50@gmail.com" 
                   className="w-full pl-11 pr-4 py-3.5 bg-gray-50 dark:bg-gray-950 border border-gray-200 dark:border-gray-800 rounded-2xl outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-300 text-gray-800 dark:text-gray-100 placeholder:text-gray-400"
                   value={email} 
                   onChange={(e) => setEmail(e.target.value)} 
