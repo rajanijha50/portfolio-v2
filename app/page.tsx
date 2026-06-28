@@ -26,6 +26,8 @@ import {
   SiVercel,
   SiNetlify,
   SiRender,
+  SiFastapi,
+  SiFoodpanda,
 } from "react-icons/si";
 import Footer from "@/components/Footer";
 
@@ -36,8 +38,8 @@ type Skill = {
     | "language"
     | "frameworks & libraries"
     | "database"
-    | "bundler"
-    | "Content Management System"
+    // | "bundler"
+    // | "Content Management System"
     | "deployment"
     | "other";
   level: number;
@@ -95,6 +97,12 @@ export default function Home() {
       level: 75,
       icon: <SiNextdotjs />,
     },
+    {
+      name: "fastAPI",
+      category: "frameworks & libraries",
+      level: 80,
+      icon: <SiFastapi />,
+    },
     { name: "mongoDB", category: "database", level: 75, icon: <SiMongodb /> },
     { name: "mySQL", category: "database", level: 60, icon: <SiMysql /> },
     {
@@ -102,6 +110,12 @@ export default function Home() {
       category: "frameworks & libraries",
       level: 60,
       icon: <SiRedux />,
+    },
+    {
+      name: "zustand",
+      category: "frameworks & libraries",
+      level: 60,
+      icon: <SiFoodpanda />,
     },
     // { name: "postgreSQL", category: "database", level: 10, icon: <SiPostgresql /> },
     {
@@ -116,13 +130,13 @@ export default function Home() {
       level: 80,
       icon: <SiBootstrap />,
     },
-    { name: "vite", category: "bundler", level: 95, icon: <SiVite /> },
-    {
-      name: "strapi",
-      category: "Content Management System",
-      level: 95,
-      icon: <SiStrapi />,
-    },
+    // { name: "vite", category: "bundler", level: 95, icon: <SiVite /> },
+    // {
+    //   name: "strapi",
+    //   category: "Content Management System",
+    //   level: 95,
+    //   icon: <SiStrapi />,
+    // },
     // { name: "wordpress", category: "Content Management System", level: 95, icon: <SiWordpress /> },
     { name: "vercel", category: "deployment", level: 95, icon: <SiVercel /> },
     { name: "netlify", category: "deployment", level: 95, icon: <SiNetlify /> },
@@ -130,11 +144,34 @@ export default function Home() {
   ];
 
   const projects: Project[] = [
+    // {
+    //   title: "Chat Z",
+    //   description:
+    //     "A modern, real-time chat application built with Next.js 15, featuring seamless messaging, user authentication, and real-time communication powered by Socket.IO.",
+    //   githubUrl: "https://github.com/rajanijha50/chat-app",
+    //   level: "advanced",
+    // },
     {
-      title: "Todo App",
+      title: "Daily Dock",
       description:
-        "A full-stack Todo application designed to demonstrate modern web development practices. This project is split into a client-side frontend and a server-side backend.",
-      githubUrl: "https://github.com/rajanijha50/todo-app",
+        "Daily Dock is a modern, premium, and unified personal productivity dashboard and workspace. It integrates a Pomodoro timer, Kanban todo board, daily journaling, note-taking, real-time weather information, and login streak tracking into a single, cohesive experience. ",
+      githubUrl: "https://github.com/rajanijha50/daily-dock",
+      liveUrl: "https://daily-dock24.vercel.app/",
+      level: "advanced",
+    },
+    {
+      title: "Movie Master",
+      description:
+        "Movie Master is a modern web application designed for movie enthusiasts to discover, track, and review their favorite movies and TV shows. Built with Next.js and Tailwind CSS, it offers a sleek, responsive interface with dark mode support.",
+      githubUrl: "https://github.com/rajanijha50/movie-app",
+      liveUrl: "https://moviemaster11.vercel.app/",
+      level: "advanced",
+    },
+    {
+      title: "News App",
+      description:
+        "A modern news application built with Next.js that fetches and displays the latest news headlines from various categories using the NewsAPI.",
+      githubUrl: "https://github.com/rajanijha50/news-app",
       level: "intermediate",
     },
     {
@@ -145,13 +182,6 @@ export default function Home() {
       level: "intermediate",
     },
     {
-      title: "QR-code Generator",
-      description:
-        "A simple QR code generator built with HTML, CSS, and JavaScript. This project demonstrates basic web development concepts and the use of the browser's canvas API to generate QR codes.",
-      githubUrl: "https://github.com/rajanijha50",
-      level: "basic",
-    },
-    {
       title: "GIF App",
       description:
         "A dynamic web application for discovering and sharing GIFs, built with React, TypeScript, and Vite. This project demonstrates modern frontend development practices and integration with third-party APIs.",
@@ -159,11 +189,25 @@ export default function Home() {
       level: "intermediate",
     },
     {
-      title: "News App",
+      title: "Weather App",
       description:
-        "A modern news application built with Next.js that fetches and displays the latest news headlines from various categories using the NewsAPI.",
-      githubUrl: "https://github.com/rajanijha50/news-app",
+        "Built using React and Vite. Provides users with current weather information and forecasts based on city search or current location.",
+      githubUrl: "https://github.com/rajanijha50/weather-app",
       level: "intermediate",
+    },
+    {
+      title: "Todo App",
+      description:
+        "A full-stack Todo application designed to demonstrate modern web development practices. This project is split into a client-side frontend and a server-side backend.",
+      githubUrl: "https://github.com/rajanijha50/todo-app",
+      level: "intermediate",
+    },
+    {
+      title: "Unit Converter",
+      description:
+        "A simple unit converter built with HTML, CSS, and JavaScript. This project demonstrates basic web development concepts and the use of the browser's local storage to store converted units.",
+      githubUrl: "https://github.com/rajanijha50/unit-converter",
+      level: "basic",
     },
     {
       title: "URL shortner",
@@ -180,33 +224,11 @@ export default function Home() {
       level: "basic",
     },
     {
-      title: "Unit Converter",
+      title: "QR-code Generator",
       description:
-        "A simple unit converter built with HTML, CSS, and JavaScript. This project demonstrates basic web development concepts and the use of the browser's local storage to store converted units.",
-      githubUrl: "https://github.com/rajanijha50/unit-converter",
+        "A simple QR code generator built with HTML, CSS, and JavaScript. This project demonstrates basic web development concepts and the use of the browser's canvas API to generate QR codes.",
+      githubUrl: "https://github.com/rajanijha50",
       level: "basic",
-    },
-    {
-      title: "Weather App",
-      description:
-        "Built using React and Vite. Provides users with current weather information and forecasts based on city search or current location.",
-      githubUrl: "https://github.com/rajanijha50/weather-app",
-      level: "intermediate",
-    },
-    // {
-    //   title: "Chat Z",
-    //   description:
-    //     "A modern, real-time chat application built with Next.js 15, featuring seamless messaging, user authentication, and real-time communication powered by Socket.IO.",
-    //   githubUrl: "https://github.com/rajanijha50/chat-app",
-    //   level: "advanced",
-    // },
-    {
-      title: "Movie Master",
-      description:
-        "Movie Master is a modern web application designed for movie enthusiasts to discover, track, and review their favorite movies and TV shows. Built with Next.js and Tailwind CSS, it offers a sleek, responsive interface with dark mode support.",
-      githubUrl: "https://github.com/rajanijha50/movie-app",
-      liveUrl: "https://moviemaster11.vercel.app/",
-      level: "advanced",
     },
   ];
 

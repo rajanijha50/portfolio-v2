@@ -50,7 +50,7 @@ const SkillCard = ({ SkillData }: { SkillData: Skill[] }) => {
             </h3>
           ))}
         </div>
-          <div className="flex justify-center flex-wrap gap-4 mx-auto">
+          <div className="md:w-4/5 flex justify-center flex-wrap gap-4 mx-auto">
             {currentSkills.map((skill, idx) => (
               <motion.div
                 key={skill.name}

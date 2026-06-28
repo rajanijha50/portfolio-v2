@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
-import { motion } from "motion/react";
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "motion/react";
 import {
   FaArrowRight,
   FaGithub,
@@ -17,7 +17,20 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Hero = () => {
   const name = "Rajani Ranjan Jha";
-  const role = "Full Stack Developer";
+  const roles = [
+    "Full Stack Developer",
+    "B.Sc CSDA @ IIT Patna | CPI 9.16",
+    "Solved 300+ Problems on LeetCode",
+  ];
+
+  const [roleIndex, setRoleIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setRoleIndex((prev) => (prev + 1) % roles.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [roles.length]);
   const about =
     "Building digital experiences that matter. I specialize in full-stack development, crafting scalable and beautiful web applications.";
 
@@ -37,11 +50,11 @@ const Hero = () => {
       url: process.env.NEXT_PUBLIC_LINKEDIN,
       icon: <FaLinkedin className="w-5 h-5" />,
     },
-    {
-      name: "Instagram",
-      url: process.env.NEXT_PUBLIC_INSTAGRAM,
-      icon: <FaInstagram className="w-5 h-5" />,
-    },
+    // {
+    //   name: "Instagram",
+    //   url: process.env.NEXT_PUBLIC_INSTAGRAM,
+    //   icon: <FaInstagram className="w-5 h-5" />,
+    // },
     {
       name: "Twitter",
       url: process.env.NEXT_PUBLIC_TWITTER,
@@ -72,15 +85,26 @@ const Hero = () => {
         className="flex-1 space-y-6 text-center md:text-left"
       >
         <div className="space-y-2">
-          <h2 className="text-sm md:text-base font-semibold tracking-wider text-primary uppercase">
+          {/* <h2 className="text-sm md:text-base font-semibold tracking-wider text-primary uppercase">
             Welcome to my portfolio
-          </h2>
+          </h2> */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
             Hi, I'm <span className="text-primary">{name}</span>
           </h1>
-          <p className="font-mono text-xl md:text-2xl text-muted-foreground">
-            {role}
-          </p>
+          <div className="font-mono text-xl md:text-2xl text-muted-foreground h-16 md:h-10 relative overflow-hidden flex justify-center items-center text-wrap">
+            <AnimatePresence mode="wait">
+              <motion.p
+                key={roleIndex}
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: -20, opacity: 0 }}
+                transition={{ duration: 0.4, ease: "easeInOut" }}
+                className="absolute inset-0"
+              >
+                {roles[roleIndex]}
+              </motion.p>
+            </AnimatePresence>
+          </div>
         </div>
 
         <p className="text-muted-foreground leading-relaxed max-w-xl mx-auto md:mx-0">

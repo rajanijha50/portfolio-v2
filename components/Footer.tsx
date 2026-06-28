@@ -20,11 +20,11 @@ export default function Footer() {
       url: process.env.NEXT_PUBLIC_LINKEDIN,
       icon: <FaLinkedin className="w-5 h-5" />,
     },
-    {
-      name: "Instagram",
-      url: process.env.NEXT_PUBLIC_INSTAGRAM,
-      icon: <FaInstagram className="w-5 h-5" />,
-    },
+    // {
+    //   name: "Instagram",
+    //   url: process.env.NEXT_PUBLIC_INSTAGRAM,
+    //   icon: <FaInstagram className="w-5 h-5" />,
+    // },
     {
       name: "Twitter",
       url: process.env.NEXT_PUBLIC_TWITTER,
