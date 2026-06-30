@@ -28,6 +28,9 @@ import {
   SiRender,
   SiFastapi,
   SiFoodpanda,
+  SiGit,
+  SiPostman,
+  SiSqlite,
 } from "react-icons/si";
 import Footer from "@/components/Footer";
 
@@ -105,6 +108,8 @@ export default function Home() {
     },
     { name: "mongoDB", category: "database", level: 75, icon: <SiMongodb /> },
     { name: "mySQL", category: "database", level: 60, icon: <SiMysql /> },
+    // { name: "postgreSQL", category: "database", level: 10, icon: <SiPostgresql /> },
+    // { name: "sqlite", category: "database", level: 10, icon: <SiSqlite /> },
     {
       name: "redux toolkit",
       category: "frameworks & libraries",
@@ -117,7 +122,6 @@ export default function Home() {
       level: 60,
       icon: <SiFoodpanda />,
     },
-    // { name: "postgreSQL", category: "database", level: 10, icon: <SiPostgresql /> },
     {
       name: "tailwind CSS",
       category: "frameworks & libraries",
@@ -141,6 +145,9 @@ export default function Home() {
     { name: "vercel", category: "deployment", level: 95, icon: <SiVercel /> },
     { name: "netlify", category: "deployment", level: 95, icon: <SiNetlify /> },
     { name: "render", category: "deployment", level: 95, icon: <SiRender /> },
+    { name: "git", category: "other", level: 60, icon: <SiGit /> },
+    { name: "postman", category: "other", level: 60, icon: <SiPostman /> },
+
   ];
 
   const projects: Project[] = [
