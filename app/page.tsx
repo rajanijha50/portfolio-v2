@@ -159,18 +159,33 @@ export default function Home() {
     //   level: "advanced",
     // },
     {
+      title: "Web Hunter",
+      description:
+        "Web Hunter is a curated web directory with AI-assisted bulk curation via Groq + Google Sheets, fuzzy search, and a React Query-powered favorites system.",
+      githubUrl: "https://github.com/rajanijha50/web-hunter",
+      liveUrl: "https://webhunterrr.vercel.app/",
+      level: "advanced",
+    },
+    {
       title: "Daily Dock",
       description:
-        "Daily Dock is a modern, premium, and unified personal productivity dashboard and workspace. It integrates a Pomodoro timer, Kanban todo board, daily journaling, note-taking, real-time weather information, and login streak tracking into a single, cohesive experience. ",
+        "Daily Dock is a modern, premium, and unified personal productivity dashboard and workspace. It integrates a Pomodoro timer, Kanban todo board, daily journaling, note-taking, real-time weather information, and login streak tracking into a single, cohesive experience.",
       githubUrl: "https://github.com/rajanijha50/daily-dock",
       liveUrl: "https://daily-dock24.vercel.app/",
+      level: "advanced",
+    },
+    {
+      title: "ADIS",
+      description:
+        "ADIS - Advanced Desktop Intelligence System, is a voice based assistant to automate your desktop. opening apps, automating browsers by just your voice command.",
+      githubUrl: "https://github.com/rajanijha50/ADIS",
       level: "advanced",
     },
     {
       title: "Movie Master",
       description:
         "Movie Master is a modern web application designed for movie enthusiasts to discover, track, and review their favorite movies and TV shows. Built with Next.js and Tailwind CSS, it offers a sleek, responsive interface with dark mode support.",
-      githubUrl: "https://github.com/rajanijha50/movie-app",
+      githubUrl: "https://github.com/rajanijha50/movie-master",
       liveUrl: "https://moviemaster11.vercel.app/",
       level: "advanced",
     },
@@ -240,33 +255,16 @@ export default function Home() {
   ];
 
   const certificates: Certificate[] = [
+    
     {
-      name: "Google AI Essentials",
-      description:
-        "Completed a beginner-friendly, self-paced online course designed to help professionals boost workplace productivity using generative AI. Created by Google experts, learned practical skills like effective prompt writing, task automation, and responsible AI usage.",
-      mediaUrl:
-        "https://drive.google.com/file/d/1jrA7BGZxsU0MEgzmDlsJIw73FzpoW06B/view?usp=sharing",
-    },
-    {
-      name: "Google Prompting Essentials",
-      description:
-        "Completed four courses, developed by Google, featuring hands-on practice designed to build AI prompting skills. Learned how to design effective prompts and applying advanced prompting techniques to complete complex tasks, analyze data, and summarize information.",
-      mediaUrl:
-        "https://drive.google.com/file/d/1nBfpm0HnSnJczoZSHwsFv_5apilxuQsa/view?usp=sharing",
-    },
-    {
-      name: "GUVI FullStack Development Course",
+      name: "GUVI Full Stack Development Course",
       description:
         "Completed a comprehensive full-stack development self-paced learning program at GUVI, covering various technologies and tools used in modern web development.",
-      mediaUrl:
-        "https://drive.google.com/file/d/11BDniY8eXjJ3CBIo__qb8rQ_t8IFJ3DH/view?usp=drive_link",
     },
     {
-      name: "GUVI Full Stack Internship",
+      name: "GUVI Full Stack Development Internship",
       description:
         "Completed a full-stack development virtual internship at GUVI, gaining hands-on experience in building modern web applications.",
-      mediaUrl:
-        "https://drive.google.com/file/d/1cUT0qNG1KDb52p9754zjcwdLjDyObL2J/view?usp=drive_link",
     },
   ];
 

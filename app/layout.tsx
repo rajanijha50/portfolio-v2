@@ -11,7 +11,7 @@ const poppins = Poppins({
 
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://rajanijha50.vercel.app"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_LIVE_URL!),
 
   title: {
     default: "Rajani Ranjan Jha | Portfolio",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     title: "Rajani Ranjan Jha | Portfolio",
     description:
       "Explore my portfolio showcasing projects, skills, and experience in Full Stack Development and AI.",
-    url: "https://rajanijha50.vercel.app",
+    url: process.env.NEXT_PUBLIC_LIVE_URL,
     siteName: "Rajani Ranjan Jha | Portfolio",
     images: [
       {

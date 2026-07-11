@@ -34,20 +34,27 @@ const CertificateCard = ({ CertificateData }: { CertificateData: Certificate[] }
             viewport={{ once: true }}
             className="group relative bg-card rounded-xl overflow-hidden border border-border hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 flex flex-col h-full"
           >
-            
+            {/* Image Container */}
+            <div className="relative h-56 w-full overflow-hidden shrink-0">
+              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors z-10" />
+              <Image
+                src={`/assets/certificates/${certificate.name.toLowerCase().replaceAll(" ", "-")}.png`}
+                alt={certificate.name}
+                fill
+                className="object-cover transform group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+
 
             {/* Content */}
-            <div className="p-6 flex flex-col grow h-72">
+            <div className="p-6 flex flex-col grow">
               <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
                 {certificate.name}
               </h3>
               <p className="text-muted-foreground text-sm line-clamp-3 mb-4 grow text-wrap">
                 {certificate.description}
               </p>
-              <a href={certificate.mediaUrl} target="_blank" className="flex justify-center items-center gap-2 text-primary hover:underline w-fit">
-                View Certificate <FiExternalLink size={18} className='text-primary'/>
-              </a>
-              
+
             </div>
           </motion.div>
         ))}

@@ -19,8 +19,8 @@ const Hero = () => {
   const name = "Rajani Ranjan Jha";
   const roles = [
     "Full Stack Developer",
-    "B.Sc CSDA @ IIT Patna | CPI 9.16",
-    "Solved 300+ Problems on LeetCode",
+    "B.Sc CSDA @ IIT Patna | CPI 9.08",
+    "Solved 350+ Problems on LeetCode",
   ];
 
   const [roleIndex, setRoleIndex] = useState(0);
