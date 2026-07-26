@@ -19,7 +19,7 @@ const Hero = () => {
   const name = "Rajani Ranjan Jha";
   const roles = [
     "Full Stack Developer",
-    "B.Sc CSDA @ IIT Patna | CPI 9.08",
+    "IIT Patna Graduate | CGPA: 9.08",
     "Solved 350+ Problems on LeetCode",
   ];
 
@@ -88,7 +88,7 @@ const Hero = () => {
           {/* <h2 className="text-sm md:text-base font-semibold tracking-wider text-primary uppercase">
             Welcome to my portfolio
           </h2> */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.10]">
             Hi, I'm <span className="text-primary">{name}</span>
           </h1>
           <div className="font-mono text-xl md:text-2xl text-muted-foreground h-16 md:h-10 relative overflow-hidden flex justify-center items-center text-wrap">

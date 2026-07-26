@@ -31,6 +31,8 @@ import {
   SiGit,
   SiPostman,
   SiSqlite,
+  SiGithub,
+  SiNodedotjs,
 } from "react-icons/si";
 import Footer from "@/components/Footer";
 
@@ -38,9 +40,9 @@ import Footer from "@/components/Footer";
 type Skill = {
   name: string;
   category:
-    | "language"
-    | "frameworks & libraries"
-    | "database"
+    | "programming language"
+    | "frontend"
+    | "backend"
     // | "bundler"
     // | "Content Management System"
     | "deployment"
@@ -67,85 +69,83 @@ type Certificate = {
 
 export default function Home() {
   const skills: Skill[] = [
-    { name: "HTML", category: "language", level: 95, icon: <SiHtml5 /> },
-    { name: "CSS", category: "language", level: 95, icon: <SiCss /> },
-    {
-      name: "javascript",
-      category: "language",
-      level: 70,
-      icon: <SiJavascript />,
-    },
-    {
-      name: "typescript",
-      category: "language",
-      level: 50,
-      icon: <SiTypescript />,
-    },
-    { name: "python", category: "language", level: 80, icon: <SiPython /> },
+    { name: "HTML", category: "frontend", level: 95, icon: <SiHtml5 /> },
+    { name: "CSS", category: "frontend", level: 95, icon: <SiCss /> },
     {
       name: "reactJS",
-      category: "frameworks & libraries",
+      category: "frontend",
       level: 60,
       icon: <SiReact />,
     },
     {
-      name: "expressJS",
-      category: "frameworks & libraries",
-      level: 80,
-      icon: <SiExpress />,
-    },
-    {
       name: "nextJS",
-      category: "frameworks & libraries",
+      category: "frontend",
       level: 75,
       icon: <SiNextdotjs />,
     },
     {
-      name: "fastAPI",
-      category: "frameworks & libraries",
-      level: 80,
-      icon: <SiFastapi />,
-    },
-    { name: "mongoDB", category: "database", level: 75, icon: <SiMongodb /> },
-    { name: "mySQL", category: "database", level: 60, icon: <SiMysql /> },
-    // { name: "postgreSQL", category: "database", level: 10, icon: <SiPostgresql /> },
-    // { name: "sqlite", category: "database", level: 10, icon: <SiSqlite /> },
-    {
       name: "redux toolkit",
-      category: "frameworks & libraries",
+      category: "frontend",
       level: 60,
       icon: <SiRedux />,
     },
     {
       name: "zustand",
-      category: "frameworks & libraries",
+      category: "frontend",
       level: 60,
       icon: <SiFoodpanda />,
     },
     {
       name: "tailwind CSS",
-      category: "frameworks & libraries",
+      category: "frontend",
       level: 90,
       icon: <SiTailwindcss />,
     },
     {
       name: "bootstrap",
-      category: "frameworks & libraries",
+      category: "frontend",
       level: 80,
       icon: <SiBootstrap />,
     },
-    // { name: "vite", category: "bundler", level: 95, icon: <SiVite /> },
-    // {
-    //   name: "strapi",
-    //   category: "Content Management System",
-    //   level: 95,
-    //   icon: <SiStrapi />,
-    // },
-    // { name: "wordpress", category: "Content Management System", level: 95, icon: <SiWordpress /> },
+    {
+      name: "nodeJS",
+      category: "backend",
+      level: 80,
+      icon: <SiNodedotjs />,
+    },
+    {
+      name: "expressJS",
+      category: "backend",
+      level: 80,
+      icon: <SiExpress />,
+    },
+    {
+      name: "fastAPI",
+      category: "backend",
+      level: 80,
+      icon: <SiFastapi />,
+    },
+    { name: "mongoDB", category: "backend", level: 75, icon: <SiMongodb /> },
+    { name: "mySQL", category: "backend", level: 60, icon: <SiMysql /> },
+    { name: "postgreSQL", category: "backend", level: 10, icon: <SiPostgresql /> },
+    {
+      name: "javascript",
+      category: "programming language",
+      level: 70,
+      icon: <SiJavascript />,
+    },
+    {
+      name: "typescript",
+      category: "programming language",
+      level: 50,
+      icon: <SiTypescript />,
+    },
+    { name: "python", category: "programming language", level: 80, icon: <SiPython /> },
     { name: "vercel", category: "deployment", level: 95, icon: <SiVercel /> },
     { name: "netlify", category: "deployment", level: 95, icon: <SiNetlify /> },
     { name: "render", category: "deployment", level: 95, icon: <SiRender /> },
     { name: "git", category: "other", level: 60, icon: <SiGit /> },
+    { name: "github", category: "other", level: 60, icon: <SiGithub /> },
     { name: "postman", category: "other", level: 60, icon: <SiPostman /> },
 
   ];
@@ -163,7 +163,7 @@ export default function Home() {
       description:
         "Web Hunter is a curated web directory with AI-assisted bulk curation via Groq + Google Sheets, fuzzy search, and a React Query-powered favorites system.",
       githubUrl: "https://github.com/rajanijha50/web-hunter",
-      liveUrl: "https://webhunterrr.vercel.app/",
+      liveUrl: "https://webhunter.space/",
       level: "advanced",
     },
     {
