@@ -20,7 +20,7 @@ const Hero = () => {
   const roles = [
     "Full Stack Developer",
     "IIT Patna Graduate | CGPA: 9.08",
-    "Solved 350+ Problems on LeetCode",
+    "Solved 400+ Problems on LeetCode",
   ];
 
   const [roleIndex, setRoleIndex] = useState(0);
