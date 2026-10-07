@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import SkillCard from "@/components/SkillCard";
 import ProjectCard from "@/components/ProjectCard";
 import CertificateCard from "@/components/CertificateCard";
+import GithubHeatmap from "@/components/GithubHeatmap";
 import ContactMe from "@/components/ContactMe";
 import {
   SiPython,
@@ -275,6 +276,7 @@ export default function Home() {
         <Hero />
         <SkillCard SkillData={skills} />
         <ProjectCard ProjectData={projects} />
+        <GithubHeatmap />
         <CertificateCard CertificateData={certificates} />
         <ContactMe />
         <Footer/>

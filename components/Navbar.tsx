@@ -12,7 +12,7 @@ const Navbar = () => {
     const [activeSection, setActiveSection] = useState('')
 
     const sections = [
-        'home', 'skills', 'projects', 'certificates', 'contact'
+        'home', 'skills', 'projects', 'activity', 'certificates', 'contact'
     ]
 
     useEffect(() => {
